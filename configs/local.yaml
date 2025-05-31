@@ -1,0 +1,10 @@
+env: "local"
+grpc:
+  port: 44044
+  timeout: 10m
+postgres:
+  port: 5432
+  password: 5432
+  user: postgres
+  host: localhost
+  name: user-service

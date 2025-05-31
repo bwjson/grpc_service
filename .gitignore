@@ -1,0 +1,48 @@
+# Go build artifacts
+/bin/
+/build/
+/dist/
+*.exe
+*.test
+*.out
+
+# IDE/editor config
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime*
+
+# Dependency/vendor tools
+vendor/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Protobuf generated files (if generated into source tree)
+*.pb.go
+*.pb.gw.go
+*.swagger.json
+*.pb.cc
+*.pb.h
+*.pb.c
+*.pb
+
+# Logs / temp
+*.log
+*.tmp
+*.cache
+
+# Coverage
+coverage.out
+
+# Optional: ignore generated gRPC-Gateway files
+*.gw.go
+
+# Optional: ignore compiled protos in other langs
+*.js
+*.ts
+*.py
+*.java
+*.cs
