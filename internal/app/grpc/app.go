@@ -19,7 +19,6 @@ type App struct {
 func New(log *slog.Logger, port string, repo postgres.StudentRepo) *App {
 	gRPCServer := grpc.NewServer()
 
-	// STUDENT REPO
 	studentgrpc.Register(gRPCServer, repo)
 
 	return &App{

@@ -16,7 +16,6 @@ func New(log *slog.Logger, grpcPort, db_port, db_pass, db_host, db_name, db_user
 		panic(err)
 	}
 
-	// STUDENTS REPO TO GRPC APP
 	grpcApp := grpcapp.New(log, grpcPort, db)
 
 	return &App{GRPCServer: grpcApp}
